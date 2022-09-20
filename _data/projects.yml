@@ -1,0 +1,5 @@
+- name: bait_packaging
+  title: Bait packaging machine
+  model: bait_packaging_model.jpg
+  pic: bait_packaging_machine.jpg
+  link: /projects/bait_packaging_machine

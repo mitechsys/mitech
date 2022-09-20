@@ -1,0 +1,17 @@
+$darkGrey: rgb(50, 50, 50);
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  color: $darkGrey;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.home.wrapper {
+  width: 80vw;
+}
