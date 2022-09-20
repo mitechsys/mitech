@@ -1,0 +1,46 @@
+.projects-grid {
+  display: grid;
+}
+
+a.project {
+  width: 25vw;
+  height: 20vw;
+  font-size: 1.3rem;
+}
+
+.bait-packaging {
+  background: url("../images/bait-packaging-closeup.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* Description container */
+.project {
+  position: relative;
+  display: inline-block;
+}
+
+/* Description text */
+.project .description {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+
+  /* Position the description text */
+  position: relative;
+  top: 80%;
+  display: inline-block;
+  width: 100%;
+  z-index: 1;
+
+  /* Fade in description */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the description text when you mouse over the description container */
+.project:hover .description {
+  visibility: visible;
+  opacity: 1;
+}

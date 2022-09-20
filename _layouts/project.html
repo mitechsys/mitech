@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  {% include head_links.html %}
+  {% include head_common.html %}
   <title>{{ page.title }}</title>
 </head>
 <body>
   {% include header.html %}
   {{ content }}
+  <p>project template</p>
   <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
   {% include footer.html %}
 </body>
