@@ -6,7 +6,6 @@ include:
   - _pages
 
 exclude:
-  - .cpanel.yml
   - deploy
   - README.md
 
