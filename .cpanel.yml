@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home4/mitechwe/public_html
-    - /bin/cp -R _site $DEPLOYPATH
