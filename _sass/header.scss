@@ -13,12 +13,17 @@ header {
     }
   }
 
+  .toggle a {
+    color: $lightText;
+  }
+
   .item {
     a {
-      color: $darkGrey;
-      font-size: 1.1em;
+      color: $lightText;
+      font-size: 1.1rem;
+      text-transform: uppercase;
       &:hover {
-        color: $green;
+        color: $lightTextHover;
       }
     }
   }
@@ -46,11 +51,11 @@ header {
       grid-template-columns: 1fr  min-content ;
       align-items: center;
       grid-auto-flow: row;
-      gap: 2px;
+      gap: 0rem;
     }
   
     .logo {
-      font-size: 1.4em;
+      font-size: 1.4rem;
       padding-bottom: 10px;
       grid-row: 1 / span 1;
     }
@@ -63,19 +68,14 @@ header {
     }
 
     .item {
+      outline: 1px solid $lightTextHover;
       display: none;
       text-align: center;
-      background: lighten($green, 45%);
-      &:hover {
-        background: lighten($green, 30%)
-      }
+      background: $darkBackground;
       a {
         display: block;
         padding: 12px;
-        font-size: 1.1em;
-        &:hover {
-          color: white;
-        }
+        font-size: 1.1rem;
       }
     }
 
