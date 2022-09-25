@@ -1,0 +1,13 @@
+{% for item in site.data.menu_items %}
+<li class="item">
+  <a href="{{ item.link | relative_url }}"
+  {% if page.url == item.link %}
+    class="current"
+  {% endif %}>
+    {{ item.name }}
+  </a>
+</li>
+{% endfor %}
+<li class="item">
+  <a href="mailto:info@mitechsys.com">Contact</a>
+</li>

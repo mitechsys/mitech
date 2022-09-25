@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head_common.html %}
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  {% include hero.html %}
+  {{ content }}
+  <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
+  {% include footer.html %}
+</body>
+</html>

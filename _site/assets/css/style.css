@@ -109,9 +109,59 @@ template { display: none; }
 
 body { margin: 0; padding: 0; min-height: 100vh; font-family: 'Open Sans', sans-serif; color: #323232; }
 
-.wrapper { margin: 0 auto; }
+a { color: #323232; }
 
-.home.wrapper { width: 80vw; }
+.wrapper { width: 80vw; margin: 0 auto; }
+
+.hero { background: linear-gradient(rgba(19, 56, 83, 0.88), rgba(19, 56, 83, 0.88)), url("../images/hero-background.png") no-repeat top center; background-size: cover; height: 100vh; }
+
+.hero h1, .hero ul { color: #addafb; }
+
+.hero .nuts { grid-area: nuts; }
+
+.hero .proj { grid-area: proj; }
+
+.hero .robot { grid-area: robot; }
+
+.hero .threeD { grid-area: threeD; }
+
+.hero .proto { grid-area: proto; }
+
+.hero .upgrade { grid-area: upgrade; }
+
+.hero .novel { grid-area: novel; }
+
+.hero .expert { grid-area: expert; }
+
+.hero .options { grid-area: options; }
+
+.hero .lease { grid-area: lease; }
+
+.hero .services ul { display: grid; gap: 3.5vmin; grid-template-areas: "nuts proj" "robot threeD" "proto upgrade" "novel expert" "options lease"; list-style-type: none; margin-block-start: 0px; margin-block-end: 0px; padding-inline-start: 0px; font-size: 3.3vmin; line-height: 1.6; }
+
+.hero .services ul span { color: #628dac; font-size: 4vmin; }
+
+header nav { padding: 15px; }
+
+header nav li { list-style: none; }
+
+header nav ul { margin: 0; padding: 0; }
+
+header nav a { text-decoration: none; }
+
+header .toggle a { color: #addafb; }
+
+header .item a { color: #addafb; font-size: 1.1rem; text-transform: uppercase; }
+
+header .item a:hover { color: #628dac; }
+
+header ul.menu { display: grid; grid-template-columns: 1fr repeat(7, max-content); align-items: center; grid-auto-flow: column; gap: 30px; }
+
+header .logo img { width: 150px; }
+
+header .toggle { display: none; }
+
+@media screen and (max-width: 960px) { header ul.menu { grid-template-columns: 1fr  min-content; align-items: center; grid-auto-flow: row; gap: 0rem; } header .logo { font-size: 1.4rem; padding-bottom: 10px; grid-row: 1 / span 1; } header .toggle { display: block; font-size: 20px; padding-bottom: 5px; grid-row: 1 / span 1; } header .item { outline: 1px solid #628dac; display: none; text-align: center; background: #133853; } header .item a { display: block; padding: 12px; font-size: 1.1rem; } header .active .item { display: block; } header ul.menu li:nth-child(3) { grid-column: 1 / span 2; grid-row: 2; } header ul.menu li:nth-child(4) { grid-column: 1 / span 2; grid-row: 3; } header ul.menu li:nth-child(5) { grid-column: 1 / span 2; grid-row: 4; } header ul.menu li:nth-child(6) { grid-column: 1 / span 2; grid-row: 5; } header ul.menu li:nth-child(7) { grid-column: 1 / span 2; grid-row: 6; } }
 
 .projects-grid { display: grid; }
 
