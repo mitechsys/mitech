@@ -3,10 +3,9 @@ header {
     li {
       list-style: none;
     }
-    padding: 15px;
     ul {
       margin: 0;
-      padding: 0;
+      padding: 15px;
     }
     a {
       text-decoration: none;
@@ -30,7 +29,7 @@ header {
   
   ul.menu {
     display: grid;
-    grid-template-columns: 1fr repeat(7, max-content);
+    grid-template-columns: 1fr repeat(5, max-content);
     align-items: center;
     grid-auto-flow: column;
     gap: 30px;
@@ -43,6 +42,11 @@ header {
   .toggle {
     display: none;
   }
+}
+
+.hero nav ul {
+  padding: 15px 20px 0px 15px;
+  background: none;
 }
 
 @media screen and (max-width: 960px) {
