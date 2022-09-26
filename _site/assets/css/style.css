@@ -121,7 +121,7 @@ a { color: #323232; }
 
 .hero .services ul span { color: #628dac; font-size: 4.5vmin; }
 
-@media screen and (max-width: 960px) { .hero .services ul { grid-template-columns: 1fr; font-size: 4vmin; } .hero .services ul span { font-size: 5vmin; } }
+@media screen and (max-width: 960px) { .hero { height: 75vh; } .hero .services { max-width: 410px; margin: 0 auto; } .hero .services ul { margin-top: -30px; grid-template-columns: 1fr; font-size: 1.2rem; gap: 0px; } .hero .services ul span { font-size: 2.2rem; } }
 
 header nav li { list-style: none; }
 

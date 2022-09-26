@@ -54,11 +54,20 @@ a {
 }
 
 @media screen and (max-width: 960px) {
+  .hero {
+    height: 75vh;
+    .services {
+      max-width: 410px;
+      margin: 0 auto;
+    }
+  }
   .hero .services ul {
+    margin-top: -30px;
     grid-template-columns: 1fr;
-    font-size: 4vmin;
+    font-size: 1.2rem;
+    gap: 0px;
     span {
-      font-size: 5vmin;
+      font-size: 2.2rem;
     }
   }
 }
