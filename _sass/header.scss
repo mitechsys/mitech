@@ -5,7 +5,7 @@ header {
     }
     ul {
       margin: 0;
-      padding: 15px;
+      padding: 15px 25px 15px 15px;
     }
     a {
       text-decoration: none;
@@ -44,6 +44,10 @@ header {
   }
 }
 
+nav ul {
+  background: $darkBackground;
+}
+
 .hero nav ul {
   padding: 15px 20px 0px 15px;
   background: none;
@@ -60,14 +64,12 @@ header {
   
     .logo {
       font-size: 1.4rem;
-      padding-bottom: 10px;
       grid-row: 1 / span 1;
     }
 
     .toggle {
       display: block;
       font-size: 20px;
-      padding-bottom: 5px;
       grid-row: 1 / span 1;
     }
 
