@@ -2,6 +2,7 @@ $darkGrey: rgb(50, 50, 50);
 $heroOverlayTop: hsla(205, 63%, 20%, 0.95);
 $heroOverlayBottom: hsla(205, 63%, 20%, 0.80);
 $darkBackground: hsl(205, 63%, 20%);
+$titleText: hsl(205,40%, 82%);
 $lightText: hsl(205, 90%, 83%);
 $lightTextHover: hsl(205, 31%, 53%);
 $lightBackground: hsl(205, 25%, 90%);
@@ -19,7 +20,6 @@ body {
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
   color: $darkGrey;
-  background: $lightBackground
 }
 
 a {
@@ -38,8 +38,16 @@ p {
   line-height: 1.2;
 }
 
+img {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .wrapper {
-  width: 80vw;
+  width: 95vw;
   margin: 0 auto;
 }
 
@@ -61,24 +69,53 @@ p {
     url("../images/hero-background.png") no-repeat top center;
   background-size: cover;
   height: 100vh;
-  h1, ul {
-    color: $lightText;
-  }
-
-  .services ul {
+  
+  .main-title {
     display: grid;
-    gap: 3.5vmin;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    list-style-type: none;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    padding-inline-start: 0px;
-    font-size: 3.5vmin;
-    line-height: 1.1;
-    span {
-      color: $lightTextHover;
-      font-size: 4.5vmin;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 2rem;
+    h1, h2, a {
+      margin-bottom: 5vmin;
+      margin-top: 0;
     }
+    h1 {
+      color: $titleText;
+      text-transform: none;
+      font-size: 6vmin;
+      font-weight: normal;
+    }
+    h2 {
+      color: $titleText;
+      font-size: 4.5vmin;
+      font-weight: normal;
+    }
+    a {
+      font-size: 4vmin;
+      background: $lightText;
+      padding: 10px 15px;
+      color: $darkBackground;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+  }
+}
+
+.services-wrapper {
+  background: url("../../assets/images/subtle_surface.png") repeat;
+}
+
+.services {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 50px;
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  font-size: 1.7rem;
+  span {
+    color: $lightTextHover;
+    margin-right: 12px;
   }
 }
 
@@ -87,22 +124,15 @@ p {
     width: 100%;
     padding: 0 1rem;
   }
+
+  .services {
+    max-width: 605px;
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+    font-size: 1.5rem;
+  }
+
   .hero {
     height: auto;
-    .services ul {
-      display: block;
-      padding: 1rem 0 2rem;
-      margin: 0 auto;
-      max-width: 394px;
-      font-size: 1.2rem;
-      span {
-        // font-size: 1.1rem;
-        display: none;
-      }
-      line-height: 1.2;
-      li {
-        margin-bottom: 1.2rem;
-      }
-    }
   }
 }

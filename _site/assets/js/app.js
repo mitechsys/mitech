@@ -18,7 +18,7 @@ window.onload = (event) => {
   
   toggle.addEventListener("click", toggleMenu);
 
-  let year = document.querySelector("#year");
-  year.textContent = (new Date()).getFullYear();
+  // let year = document.querySelector("#year");
+  // year.textContent = (new Date()).getFullYear();
 
 };
