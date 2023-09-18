@@ -391,12 +391,15 @@ img {
 }
 .hero .main-title a {
   font-size: 4vmin;
-  background: hsl(205, 90%, 83%);
+  background: hsl(205, 57%, 70%);
   padding: 10px 15px;
   color: hsl(205, 63%, 20%);
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
+}
+.hero .main-title a:hover {
+  background: #77a4c3;
 }
 
 .services-wrapper {
@@ -413,7 +416,7 @@ img {
   font-size: 1.7rem;
 }
 .services span {
-  color: hsl(205, 31%, 53%);
+  color: #216391;
   margin-right: 12px;
 }
 
@@ -451,7 +454,7 @@ header .item a {
   text-transform: uppercase;
 }
 header .item a:hover {
-  color: hsl(205, 31%, 53%);
+  color: #8aaec9;
 }
 header ul.menu {
   display: grid;
@@ -493,7 +496,7 @@ nav ul {
     grid-row: 1/span 1;
   }
   header .item {
-    outline: 1px solid hsl(205, 31%, 53%);
+    outline: 1px solid #8aaec9;
     display: none;
     text-align: center;
     background: hsl(205, 63%, 20%);

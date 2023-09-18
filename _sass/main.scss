@@ -4,8 +4,8 @@ $heroOverlayBottom: hsla(205, 63%, 20%, 0.80);
 $darkBackground: hsl(205, 63%, 20%);
 $titleText: hsl(205,40%, 82%);
 $lightText: hsl(205, 90%, 83%);
-$lightTextHover: hsl(205, 31%, 53%);
 $lightBackground: hsl(205, 25%, 90%);
+$button: hsl(205, 57%, 70%);
 
 html {
   box-sizing: border-box;
@@ -91,12 +91,15 @@ img {
     }
     a {
       font-size: 4vmin;
-      background: $lightText;
+      background: $button;
       padding: 10px 15px;
       color: $darkBackground;
       text-decoration: none;
       border-radius: 5px;
       display: inline-block;
+      &:hover {
+        background: mix(black, $button, 12%);
+      }
     }
   }
 }
@@ -114,7 +117,7 @@ img {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   font-size: 1.7rem;
   span {
-    color: $lightTextHover;
+    color: lighten($darkBackground, 15%);
     margin-right: 12px;
   }
 }
