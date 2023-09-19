@@ -357,8 +357,14 @@ img {
 
 .wrapper.narrow {
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 2rem;
   max-width: 900px;
+}
+
+.wrapper.wide {
+  width: 100%;
+  padding: 0 2rem;
+  max-width: 1400px;
 }
 
 .add-margin {
