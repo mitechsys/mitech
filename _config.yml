@@ -19,4 +19,27 @@ defaults:
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /projects/:slug/
+    order:
+      - roto_mold_service_platform.html
+      - cartridge_filling_system.html
+      - tie_dye_prep_machine.html
+      - lagoon_pumping_system.html
+      - garden_seed_display_assembly_station.html
+      - bait_packing_system.html
+      - sheet_feed_system.html
+      - magnet_dispenser_systems.html
+      - automotive_component_assembly_station.html
+      - large_box_blank_feed_and_gluing_system_refurbishment.html
+      - refurbish_pneumatically_driven_paint_booth.html
+      - high_temperature_oven_lift_system.html
+      - automated_production_line_for_simulated_stone_mold_production.html
+      - roof_and_door_actuation_systems_for_demo_trailer.html
+      - quick_change_production_tooling.html
+      - seed_starter_tray_assembly_system.html
+      - palletizing_robot_cell_setup_and_refurbishment.html
+      - therapy_table.html
+      - high_pressure_hydraulic_swivel_design.html
+      - marine_thruster_system_desigh.html
+      - marine_hydraulic_power_unit_design.html
+      - rovs_and_support_systems.html

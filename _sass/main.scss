@@ -31,11 +31,13 @@ h1 {
   text-transform: uppercase;
   color: $darkBackground;
   font-weight: 700;
+  margin: 0 0 1.5rem;
 }
 
 p {
   font-size: 1.2rem;
-  line-height: 1.2;
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
 }
 
 img {
@@ -58,8 +60,8 @@ img {
 }
 
 .add-margin {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .hero {
@@ -69,28 +71,28 @@ img {
     url("../images/hero-background.png") no-repeat top center;
   background-size: cover;
   height: 100vh;
-  
+ 
   .main-title {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     padding: 2rem;
     h1, h2, a {
-      margin-bottom: 5vmin;
+      margin-bottom: 2.5rem;
       margin-top: 0;
     }
     h1 {
       color: $titleText;
       text-transform: none;
-      font-size: 6vmin;
+      font-size: 2.5rem;
       font-weight: normal;
     }
     h2 {
       color: $titleText;
-      font-size: 4.5vmin;
+      font-size: 2.2rem;
       font-weight: normal;
     }
     a {
-      font-size: 4vmin;
+      font-size: 1.5rem;
       background: $button;
       padding: 10px 15px;
       color: $darkBackground;
@@ -108,17 +110,22 @@ img {
   background: url("../../assets/images/subtle_surface.png") repeat;
 }
 
-.services {
+ul.services {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 50px 50px 50px 100px;
   display: grid;
   gap: 1.2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  font-size: 1.7rem;
-  span {
+  font-size: 1.5rem;
+  list-style: none;
+  li::before {
+    content: "\2713";
     color: lighten($darkBackground, 15%);
-    margin-right: 12px;
+    font-weight: bold;
+    display: inline-block; 
+    width: 2rem;
+    margin-left: -2rem;
   }
 }
 
@@ -128,14 +135,34 @@ img {
     padding: 0 1rem;
   }
 
-  .services {
+  ul.services {
     max-width: 605px;
     grid-template-columns: 1fr;
     gap: 1.1rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    padding: 40px 40px 40px 60px;
+    li::before {
+      width: 1.5rem;
+      margin-left: -1.5rem;
+    }
   }
 
   .hero {
     height: auto;
+
+    .main-title {
+      h1, h2, a {
+        margin-bottom: 1.5rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      a {
+        font-size: 1.2rem;
+      }
+    }
   }
 }
