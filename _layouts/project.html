@@ -6,8 +6,10 @@
 </head>
 <body>
   {% include header.html %}
-  {{ content }}
-  <p>project template</p>
+  <div class="wrapper narrow add-margin">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </div>
   <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
   {% include footer.html %}
 </body>

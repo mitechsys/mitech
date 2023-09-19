@@ -22,7 +22,7 @@ header {
       font-size: 1.1rem;
       text-transform: uppercase;
       &:hover {
-        color: $lightTextHover;
+        color: mix(black, $lightText, 20%);
       }
     }
   }
@@ -74,7 +74,7 @@ nav ul {
     }
 
     .item {
-      outline: 1px solid $lightTextHover;
+      outline: 1px solid mix(black, $lightText, 20%);
       display: none;
       text-align: center;
       background: $darkBackground;

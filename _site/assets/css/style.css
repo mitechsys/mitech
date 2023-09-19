@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -332,11 +333,13 @@ h1 {
   text-transform: uppercase;
   color: hsl(205, 63%, 20%);
   font-weight: 700;
+  margin: 0 0 1.5rem;
 }
 
 p {
   font-size: 1.2rem;
-  line-height: 1.2;
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
 }
 
 img {
@@ -359,8 +362,8 @@ img {
 }
 
 .add-margin {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .hero {
@@ -375,46 +378,54 @@ img {
   padding: 2rem;
 }
 .hero .main-title h1, .hero .main-title h2, .hero .main-title a {
-  margin-bottom: 5vmin;
+  margin-bottom: 2.5rem;
   margin-top: 0;
 }
 .hero .main-title h1 {
   color: hsl(205, 40%, 82%);
   text-transform: none;
-  font-size: 6vmin;
+  font-size: 2.5rem;
   font-weight: normal;
 }
 .hero .main-title h2 {
   color: hsl(205, 40%, 82%);
-  font-size: 4.5vmin;
+  font-size: 2.2rem;
   font-weight: normal;
 }
 .hero .main-title a {
-  font-size: 4vmin;
-  background: hsl(205, 90%, 83%);
+  font-size: 1.5rem;
+  background: hsl(205, 57%, 70%);
   padding: 10px 15px;
   color: hsl(205, 63%, 20%);
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
 }
+.hero .main-title a:hover {
+  background: #77a4c3;
+}
 
 .services-wrapper {
   background: url("../../assets/images/subtle_surface.png") repeat;
 }
 
-.services {
+ul.services {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 50px 50px 50px 100px;
   display: grid;
   gap: 1.2rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  list-style: none;
 }
-.services span {
-  color: hsl(205, 31%, 53%);
-  margin-right: 12px;
+ul.services li::before {
+  content: "✓";
+  color: #216391;
+  font-weight: bold;
+  display: inline-block;
+  width: 2rem;
+  margin-left: -2rem;
 }
 
 @media screen and (max-width: 960px) {
@@ -422,14 +433,31 @@ img {
     width: 100%;
     padding: 0 1rem;
   }
-  .services {
+  ul.services {
     max-width: 605px;
     grid-template-columns: 1fr;
     gap: 1.1rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    padding: 40px 40px 40px 60px;
+  }
+  ul.services li::before {
+    width: 1.5rem;
+    margin-left: -1.5rem;
   }
   .hero {
     height: auto;
+  }
+  .hero .main-title h1, .hero .main-title h2, .hero .main-title a {
+    margin-bottom: 1.5rem;
+  }
+  .hero .main-title h1 {
+    font-size: 1.5rem;
+  }
+  .hero .main-title h2 {
+    font-size: 1.3rem;
+  }
+  .hero .main-title a {
+    font-size: 1.2rem;
   }
 }
 header nav li {
@@ -451,7 +479,7 @@ header .item a {
   text-transform: uppercase;
 }
 header .item a:hover {
-  color: hsl(205, 31%, 53%);
+  color: #8aaec9;
 }
 header ul.menu {
   display: grid;
@@ -493,7 +521,7 @@ nav ul {
     grid-row: 1/span 1;
   }
   header .item {
-    outline: 1px solid hsl(205, 31%, 53%);
+    outline: 1px solid #8aaec9;
     display: none;
     text-align: center;
     background: hsl(205, 63%, 20%);
