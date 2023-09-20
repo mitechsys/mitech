@@ -434,6 +434,12 @@ ul.services li::before {
   margin-left: -2rem;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
 @media screen and (max-width: 960px) {
   .wrapper {
     width: 100%;
@@ -464,6 +470,11 @@ ul.services li::before {
   }
   .hero .main-title a {
     font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
 header nav li {
