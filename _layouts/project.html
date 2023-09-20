@@ -6,9 +6,17 @@
 </head>
 <body>
   {% include header.html %}
-  <div class="wrapper narrow add-margin">
+  <div class="wrapper wide add-margin">
     <h1>{{ page.title }}</h1>
-    {{ content }}
+    <div class="project-grid">
+      <div class="project-col-1">
+        <p>{{ page.text }}</p>
+        {% if page.image_2 %}<img src="/assets/images/{{ page.image_2 }}" alt="{{ page.title }}">{% endif %}
+      </div>
+      <div class="project-col-2">
+        <img src="/assets/images/{{ page.image_1 }}" alt="{{ page.title }}">
+      </div>
+    </div>
   </div>
   <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
   {% include footer.html %}
