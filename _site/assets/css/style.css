@@ -336,7 +336,13 @@ h1 {
   margin: 0 0 1.5rem;
 }
 
-p {
+h2 {
+  font-size: 1.3rem;
+  color: rgb(50, 50, 50);
+  font-weight: 600;
+}
+
+p, ul {
   font-size: 1.2rem;
   line-height: 1.5;
   margin: 0 0 1.5rem;
@@ -352,6 +358,7 @@ img {
 
 .wrapper {
   width: 95vw;
+  min-height: 50vh;
   margin: 0 auto;
 }
 
@@ -438,6 +445,9 @@ ul.services li::before {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+.project-grid img {
+  width: 100%;
 }
 
 @media screen and (max-width: 960px) {
@@ -615,6 +625,75 @@ a.project {
 .project:hover .description {
   visibility: visible;
   opacity: 1;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr max-content max-content;
+  gap: 6vw;
+}
+
+footer {
+  background: hsla(205, 63%, 20%, 0.95);
+  padding: 6vw 4vw;
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer nav ul {
+  margin: 0;
+  background: none;
+  list-style-type: none;
+  padding-left: 0;
+}
+footer nav ul li a {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+footer h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  color: white;
+}
+footer p {
+  margin: 5px 0 30px;
+}
+footer p.copyright {
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    text-align: center;
+    padding-bottom: 4vw;
+  }
+  footer nav {
+    text-align: center;
+  }
+  .footer-grid {
+    display: block;
+  }
+  footer p {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  footer {
+    padding: 6vw 8vw;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  footer {
+    padding: 6vw 10vw;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  footer {
+    padding: 6vw 14vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
