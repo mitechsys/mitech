@@ -6,6 +6,8 @@ $titleText: hsl(205,40%, 82%);
 $lightText: hsl(205, 90%, 83%);
 $lightBackground: hsl(205, 25%, 90%);
 $button: hsl(205, 57%, 70%);
+$footerBackground: $heroOverlayTop;
+$offWhite: rgb(220, 220, 220);
 
 html {
   box-sizing: border-box;
@@ -34,7 +36,13 @@ h1 {
   margin: 0 0 1.5rem;
 }
 
-p {
+h2 {
+  font-size: 1.3rem;
+  color: $darkGrey;
+  font-weight: 600;
+}
+
+p, ul {
   font-size: 1.2rem;
   line-height: 1.5;
   margin: 0 0 1.5rem;
@@ -50,6 +58,7 @@ img {
 
 .wrapper {
   width: 95vw;
+  min-height: 50vh;
   margin: 0 auto;
 }
 
@@ -139,6 +148,9 @@ ul.services {
   display:grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 960px) {
