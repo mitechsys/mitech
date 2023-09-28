@@ -1,22 +1,22 @@
 .projects-grid {
   display: grid;
+  margin: 2vw 0;
+  gap: 2vw;
+  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
 }
 
 a.project {
-  width: 25vw;
-  height: 20vw;
   font-size: 1.3rem;
-}
-
-.bait-packaging {
-  background: url("../images/bait-packaging-closeup.jpg") center center no-repeat;
   background-size: cover;
+  padding-top: 90%;
 }
 
-/* Description container */
-.project {
-  position: relative;
-  display: inline-block;
+.bait-packing {
+  background: url("../images/bait-packing-closeup.jpg") center center no-repeat;
+}
+
+.roto-mold {
+  background: url("../images/roto_mold_small.jpg") center center no-repeat;
 }
 
 /* Description text */
@@ -29,7 +29,6 @@ a.project {
 
   /* Position the description text */
   position: relative;
-  top: 80%;
   display: inline-block;
   width: 100%;
   z-index: 1;

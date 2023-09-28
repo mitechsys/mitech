@@ -6,7 +6,7 @@
 
 footer  {
   background: $footerBackground;
-  padding: 6vw 4vw;
+  padding: 4vh;
   color: white;
   a {
     color: white;
@@ -41,7 +41,6 @@ footer  {
 @media only screen and (max-width: 600px) {
   footer {
     text-align: center;
-    padding-bottom: 4vw;
     nav {
       text-align: center;
     }
@@ -58,18 +57,18 @@ footer  {
 
 @media only screen and (min-width: 1000px) {
   footer {
-    padding: 6vw 8vw;
+    padding: 4vh 8vw;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   footer {
-    padding: 6vw 10vw;
+    padding: 4vh 10vw;
   }
 }
 
 @media only screen and (min-width: 2000px) {
   footer {
-    padding: 6vw 14vw;
+    padding: 4vh 14vw;
   }
 }

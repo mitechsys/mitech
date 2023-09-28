@@ -3,13 +3,21 @@ title: Mitech Systems, Ltd.
 layout: home
 permalink: /
 ---
-{% include services_grid.html %}
+
 <div class="wrapper">
   <div class="projects-grid">
-    <a href="{{ '/projects/bait_packaging_machine' | relative_url }}"
-       class="project bait-packaging"
-       alt="bait packaging machine">
-      <span class="description">Bait packaging machine</span>
-    </a>
+    {% include main_title.html %}
+    {% include projects/bait_packing.html %}
+    {% include projects/roto_mold.html %}
+    {% include projects/bait_packing.html %}
+    {% include projects/roto_mold.html %}
+    {% include projects/bait_packing.html %}
+    {% include projects/roto_mold.html %}
+    {% include projects/bait_packing.html %}
+    {% include projects/roto_mold.html %}
+    {% include projects/bait_packing.html %}
+    {% include projects/roto_mold.html %}
+    {% include projects/bait_packing.html %}
   </div>
 </div>
+{% include services_grid.html %}
