@@ -357,7 +357,7 @@ img {
 }
 
 .wrapper {
-  width: 95vw;
+  max-width: 96vw;
   min-height: 50vh;
   margin: 0 auto;
 }
@@ -379,33 +379,31 @@ img {
   margin-bottom: 3rem;
 }
 
-.hero {
+.main-title {
   display: grid;
-  background: linear-gradient(hsla(205, 63%, 20%, 0.95), hsla(205, 63%, 20%, 0.8)), url("../images/hero-background.png") no-repeat top center;
-  background-size: cover;
-  height: 100vh;
-}
-.hero .main-title {
-  display: grid;
+  align-items: center;
+  height: 100%;
+  min-height: 320px;
+  padding: 60px 15px;
+  background-color: hsl(205, 63%, 20%);
   grid-template-columns: minmax(0, 1fr);
-  padding: 2rem;
 }
-.hero .main-title h1, .hero .main-title h2, .hero .main-title a {
-  margin-bottom: 2.5rem;
-  margin-top: 0;
+.main-title h1, .main-title h2, .main-title a {
+  margin: 0;
 }
-.hero .main-title h1 {
+.main-title h1 {
   color: hsl(205, 40%, 82%);
   text-transform: none;
-  font-size: 2.5rem;
-  font-weight: normal;
-}
-.hero .main-title h2 {
-  color: hsl(205, 40%, 82%);
   font-size: 2.2rem;
+  line-height: 1.3;
   font-weight: normal;
 }
-.hero .main-title a {
+.main-title h2 {
+  color: hsl(205, 40%, 82%);
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.main-title a {
   font-size: 1.5rem;
   background: hsl(205, 57%, 70%);
   padding: 10px 15px;
@@ -414,7 +412,7 @@ img {
   border-radius: 5px;
   display: inline-block;
 }
-.hero .main-title a:hover {
+.main-title a:hover {
   background: #77a4c3;
 }
 
@@ -423,11 +421,12 @@ img {
 }
 
 ul.services {
-  max-width: 1240px;
+  max-width: 1340px;
   margin: 0 auto;
   padding: 50px 50px 50px 100px;
   display: grid;
-  gap: 1.2rem;
+  row-gap: 1.2rem;
+  column-gap: 10rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   font-size: 1.5rem;
   list-style: none;
@@ -584,23 +583,23 @@ nav ul {
 }
 .projects-grid {
   display: grid;
+  margin: 2vw 0;
+  gap: 2vw;
+  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
 }
 
 a.project {
-  width: 25vw;
-  height: 20vw;
   font-size: 1.3rem;
-}
-
-.bait-packaging {
-  background: url("../images/bait-packaging-closeup.jpg") center center no-repeat;
   background-size: cover;
+  padding-top: 90%;
 }
 
-/* Description container */
-.project {
-  position: relative;
-  display: inline-block;
+.bait-packing {
+  background: url("../images/bait-packing-closeup.jpg") center center no-repeat;
+}
+
+.roto-mold {
+  background: url("../images/roto_mold_small.jpg") center center no-repeat;
 }
 
 /* Description text */
@@ -612,7 +611,6 @@ a.project {
   padding: 5px 0;
   /* Position the description text */
   position: relative;
-  top: 80%;
   display: inline-block;
   width: 100%;
   z-index: 1;
@@ -635,7 +633,7 @@ a.project {
 
 footer {
   background: hsla(205, 63%, 20%, 0.95);
-  padding: 6vw 4vw;
+  padding: 4vh;
   color: white;
 }
 footer a {
@@ -668,7 +666,6 @@ footer p.copyright {
 @media only screen and (max-width: 600px) {
   footer {
     text-align: center;
-    padding-bottom: 4vw;
   }
   footer nav {
     text-align: center;
@@ -682,17 +679,17 @@ footer p.copyright {
 }
 @media only screen and (min-width: 1000px) {
   footer {
-    padding: 6vw 8vw;
+    padding: 4vh 8vw;
   }
 }
 @media only screen and (min-width: 1600px) {
   footer {
-    padding: 6vw 10vw;
+    padding: 4vh 10vw;
   }
 }
 @media only screen and (min-width: 2000px) {
   footer {
-    padding: 6vw 14vw;
+    padding: 4vh 14vw;
   }
 }
 
