@@ -1,8 +1,8 @@
-.projects-grid {
+.home-projects-grid {
   display: grid;
   margin: 2vw 0;
   gap: 2vw;
-  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 a.project {
@@ -17,6 +17,10 @@ a.project {
 
 .roto-mold {
   background: url("../images/roto_mold_small.jpg") center center no-repeat;
+}
+
+.roto-mold-model {
+  background: url("../images/roto_mold_model.jpg") center center no-repeat;
 }
 
 /* Description text */
