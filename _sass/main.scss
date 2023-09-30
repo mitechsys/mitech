@@ -58,8 +58,12 @@ img {
 
 .wrapper {
   max-width: 96vw;
-  min-height: 50vh;
+  min-height: 62vh;
   margin: 0 auto;
+}
+
+.hero-wrapper .wrapper {
+  min-height: 0;
 }
 
 .wrapper.narrow {
@@ -72,12 +76,6 @@ img {
   width: 100%;
   padding: 0 2rem;
   max-width: 1400px;
-}
-
-.wrapper.extra-wide {
-  width: 100%;
-  padding: 0 2rem;
-  max-width: 2000px;
 }
 
 .add-margin {
@@ -98,15 +96,18 @@ img {
 }
 
 .main-title {
-  display: grid;
+  display: flex;
   align-items: center;
-  height: 100%;
-  min-height: 320px;
-  padding: 30px 15px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3vh 15px;
   background-color: $darkBackground;
   grid-template-columns: minmax(0, 1fr);
+  .content {
+    margin: 0 auto;
+  }
   h1, h2, a {
-    margin: 0;
+    margin: 0 0 2.2rem;
   }
   h1 {
     color: $titleText;
@@ -167,10 +168,20 @@ ul.services {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  ul.services {
+    padding: 75px 50px 75px 100px;
+  }
+}
+
 @media screen and (max-width: 960px) {
-  .wrapper {
-    width: 100%;
+  .wrapper, .wrapper.narrow, .wrapper.wide {
+    max-width: 100%;
     padding: 0 1rem;
+  }
+
+  .hero-grid {
+    padding: 1rem 0 0;
   }
 
   ul.services {

@@ -358,8 +358,12 @@ img {
 
 .wrapper {
   max-width: 96vw;
-  min-height: 50vh;
+  min-height: 62vh;
   margin: 0 auto;
+}
+
+.hero-wrapper .wrapper {
+  min-height: 0;
 }
 
 .wrapper.narrow {
@@ -379,17 +383,32 @@ img {
   margin-bottom: 3rem;
 }
 
-.main-title {
+.hero-grid {
   display: grid;
+  padding: 2vw 0 0;
+  gap: 2vw;
+  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
+}
+.hero-grid a.project {
+  font-size: 1.3rem;
+  background-size: cover;
+  padding-top: 50%;
+}
+
+.main-title {
+  display: flex;
   align-items: center;
-  height: 100%;
-  min-height: 320px;
-  padding: 60px 15px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 3vh 15px;
   background-color: hsl(205, 63%, 20%);
   grid-template-columns: minmax(0, 1fr);
 }
+.main-title .content {
+  margin: 0 auto;
+}
 .main-title h1, .main-title h2, .main-title a {
-  margin: 0;
+  margin: 0 0 2.2rem;
 }
 .main-title h1 {
   color: hsl(205, 40%, 82%);
@@ -416,7 +435,7 @@ img {
   background: #77a4c3;
 }
 
-.services-wrapper {
+.services-wrapper, .hero-wrapper {
   background: url("../../assets/images/subtle_surface.png") repeat;
 }
 
@@ -449,10 +468,18 @@ ul.services li::before {
   width: 100%;
 }
 
+@media screen and (min-width: 1400px) {
+  ul.services {
+    padding: 75px 50px 75px 100px;
+  }
+}
 @media screen and (max-width: 960px) {
-  .wrapper {
-    width: 100%;
+  .wrapper, .wrapper.narrow, .wrapper.wide {
+    max-width: 100%;
     padding: 0 1rem;
+  }
+  .hero-grid {
+    padding: 1rem 0 0;
   }
   ul.services {
     max-width: 605px;
@@ -581,11 +608,11 @@ nav ul {
     grid-row: 6;
   }
 }
-.projects-grid {
+.home-projects-grid {
   display: grid;
-  margin: 2vw 0;
+  padding: 2vw 0;
   gap: 2vw;
-  grid-template-columns: repeat(auto-fit, minmax(455px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 a.project {
@@ -600,6 +627,26 @@ a.project {
 
 .roto-mold {
   background: url("../images/roto_mold_small.jpg") center center no-repeat;
+}
+
+.roto-mold-model {
+  background: url("../images/roto_mold_model.jpg") center center no-repeat;
+}
+
+.garden-seed {
+  background: url("../images/garden_seed_display.jpg") center center no-repeat;
+}
+
+.cartridge-filling {
+  background: url("../images/cartridge_filling_system.jpg") center center no-repeat;
+}
+
+.lagoon-pumping {
+  background: url("../images/lagoon_pumping_system.jpg") center center no-repeat;
+}
+
+.tie-dye {
+  background: url("../images/tie_dye_machine.jpg") center center no-repeat;
 }
 
 /* Description text */
@@ -625,6 +672,11 @@ a.project {
   opacity: 1;
 }
 
+@media screen and (max-width: 960px) {
+  .home-projects-grid {
+    padding: 1rem 0;
+  }
+}
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr max-content max-content;

@@ -1,6 +1,6 @@
 .home-projects-grid {
   display: grid;
-  margin: 2vw 0;
+  padding: 2vw 0;
   gap: 2vw;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
@@ -21,6 +21,22 @@ a.project {
 
 .roto-mold-model {
   background: url("../images/roto_mold_model.jpg") center center no-repeat;
+}
+
+.garden-seed {
+  background: url("../images/garden_seed_display.jpg") center center no-repeat;
+}
+
+.cartridge-filling {
+  background: url("../images/cartridge_filling_system.jpg") center center no-repeat;
+}
+
+.lagoon-pumping {
+  background: url("../images/lagoon_pumping_system.jpg") center center no-repeat;
+}
+
+.tie-dye {
+  background: url("../images/tie_dye_machine.jpg") center center no-repeat;
 }
 
 /* Description text */
@@ -46,4 +62,10 @@ a.project {
 .project:hover .description {
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .home-projects-grid {
+    padding: 1rem 0;
+  }
 }
