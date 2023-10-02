@@ -397,11 +397,11 @@ img {
 
 .main-title {
   display: flex;
+  background: linear-gradient(rgba(19, 56, 83, 0.95), hsla(205.6, 57.1%, 32.9%, 0.92));
   align-items: center;
   margin: 0 auto;
   width: 100%;
   padding: 3vh 15px;
-  background-color: hsl(205, 63%, 20%);
   grid-template-columns: minmax(0, 1fr);
 }
 .main-title .content {
@@ -684,7 +684,7 @@ a.project {
 }
 
 footer {
-  background: hsla(205, 63%, 20%, 0.95);
+  background: rgba(19, 56, 83, 0.95);
   padding: 4vh;
   color: white;
 }
