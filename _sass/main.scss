@@ -1,12 +1,12 @@
 $darkGrey: rgb(50, 50, 50);
-$heroOverlayTop: hsla(205, 63%, 20%, 0.95);
-$heroOverlayBottom: hsla(205, 63%, 20%, 0.80);
 $darkBackground: hsl(205, 63%, 20%);
+$titleGradientTop: fade-out($darkBackground, 0.05);
+$titleGradientBottom: hsla(205.6, 57.1%, 32.9%, 0.92);
 $titleText: hsl(205,40%, 82%);
 $lightText: hsl(205, 90%, 83%);
 $lightBackground: hsl(205, 25%, 90%);
 $button: hsl(205, 57%, 70%);
-$footerBackground: $heroOverlayTop;
+$footerBackground: fade-out($darkBackground, 0.05);
 $offWhite: rgb(220, 220, 220);
 
 html {
@@ -97,11 +97,11 @@ img {
 
 .main-title {
   display: flex;
+  background: linear-gradient($titleGradientTop, $titleGradientBottom);
   align-items: center;
   margin: 0 auto;
   width: 100%;
   padding: 3vh 15px;
-  background-color: $darkBackground;
   grid-template-columns: minmax(0, 1fr);
   .content {
     margin: 0 auto;
