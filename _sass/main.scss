@@ -8,6 +8,7 @@ $lightBackground: hsl(205, 25%, 90%);
 $button: hsl(205, 57%, 70%);
 $footerBackground: fade-out($darkBackground, 0.05);
 $offWhite: rgb(220, 220, 220);
+$mediumGrey: rgba(110, 110, 110, 0.6);
 
 html {
   box-sizing: border-box;
@@ -106,7 +107,7 @@ img {
   .content {
     margin: 0 auto;
   }
-  h1, h2, a {
+  h1, h2 {
     margin: 0 0 2.2rem;
   }
   h1 {
@@ -165,6 +166,20 @@ ul.services {
   gap: 30px;
   img {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .main-title h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-title h2 {
+    font-size: 2rem;
+  }
+
+  .main-title h1, .main-title h2 {
+    margin: 0 0 3.5rem;
   }
 }
 
