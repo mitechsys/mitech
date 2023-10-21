@@ -407,7 +407,7 @@ img {
 .main-title .content {
   margin: 0 auto;
 }
-.main-title h1, .main-title h2, .main-title a {
+.main-title h1, .main-title h2 {
   margin: 0 0 2.2rem;
 }
 .main-title h1 {
@@ -468,6 +468,17 @@ ul.services li::before {
   width: 100%;
 }
 
+@media screen and (min-width: 2000px) {
+  .main-title h1 {
+    font-size: 2.5rem;
+  }
+  .main-title h2 {
+    font-size: 2rem;
+  }
+  .main-title h1, .main-title h2 {
+    margin: 0 0 3.5rem;
+  }
+}
 @media screen and (min-width: 1400px) {
   ul.services {
     padding: 75px 50px 75px 100px;
@@ -618,7 +629,7 @@ nav ul {
 a.project {
   font-size: 1.3rem;
   background-size: cover;
-  padding-top: 90%;
+  padding-top: 80%;
 }
 
 .bait-packing {
@@ -641,6 +652,10 @@ a.project {
   background: url("../images/cartridge_filling_system.jpg") center center no-repeat;
 }
 
+.cartridge-filling-closeup {
+  background: url("../images/cartridge_filling_closeup.jpg") center center no-repeat;
+}
+
 .lagoon-pumping {
   background: url("../images/lagoon_pumping_system.jpg") center center no-repeat;
 }
@@ -649,10 +664,18 @@ a.project {
   background: url("../images/tie_dye_machine.jpg") center center no-repeat;
 }
 
+.sheet-feed {
+  background: url("../images/sheet_feed_system_small.jpg") center center no-repeat;
+}
+
+.magnet-dispenser-systems {
+  background: url("../images/magnet_dispenser_detail.jpg") center center no-repeat;
+}
+
 /* Description text */
 .project .description {
   visibility: hidden;
-  background-color: #555;
+  background-color: rgba(110, 110, 110, 0.6);
   color: #fff;
   text-align: center;
   padding: 5px 0;
