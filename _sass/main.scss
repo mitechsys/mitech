@@ -197,6 +197,13 @@ ul.services {
 
   .hero-grid {
     padding: 1rem 0 0;
+    a.project {
+      display: none;
+    }
+  }
+
+  .project-grid {
+    gap: 1rem;
   }
 
   ul.services {
@@ -232,7 +239,7 @@ ul.services {
 }
 
 @media screen and (max-width: 900px) {
-  .project-grid {
+  .project-grid, .hero-grid {
     grid-template-columns: 1fr;
   }
 }
