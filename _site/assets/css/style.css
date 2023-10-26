@@ -492,6 +492,12 @@ ul.services li::before {
   .hero-grid {
     padding: 1rem 0 0;
   }
+  .hero-grid a.project {
+    display: none;
+  }
+  .project-grid {
+    gap: 1rem;
+  }
   ul.services {
     max-width: 605px;
     grid-template-columns: 1fr;
@@ -520,7 +526,7 @@ ul.services li::before {
   }
 }
 @media screen and (max-width: 900px) {
-  .project-grid {
+  .project-grid, .hero-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -632,8 +638,8 @@ a.project {
   padding-top: 80%;
 }
 
-.bait-packing {
-  background: url("../images/bait-packing-closeup.jpg") center center no-repeat;
+.bait-packaging {
+  background: url("../images/bait_packaging_closeup.jpg") center center no-repeat;
 }
 
 .roto-mold {
@@ -672,6 +678,14 @@ a.project {
   background: url("../images/magnet_dispenser_detail.jpg") center center no-repeat;
 }
 
+.automotive-component-assembly-station {
+  background: url("../images/automotive_component_assembly_station.jpg") center center no-repeat;
+}
+
+.large-box-feed-system-refurbishment {
+  background: url("../images/large_box_feed_system_refurbishment_detail.jpg") center center no-repeat;
+}
+
 /* Description text */
 .project .description {
   visibility: hidden;
@@ -698,6 +712,7 @@ a.project {
 @media screen and (max-width: 960px) {
   .home-projects-grid {
     padding: 1rem 0;
+    gap: 1rem;
   }
 }
 .footer-grid {
