@@ -30,10 +30,11 @@ collections:
       - sheet_feed_system.html
       - magnet_dispenser_systems.html
       - automotive_component_assembly_station.html
+      - automotive_component_inspection_station.html
       - large_box_blank_feed_and_gluing_system_refurbishment.html
       - refurbish_pneumatically_driven_paint_booth.html
       - high_temperature_oven_lift_system.html
-      - automated_production_line_for_simulated_stone_mold_production.html
+      - automate_simulated_stone_mold_production.html
       - roof_and_door_actuation_systems_for_demo_trailer.html
       - quick_change_production_tooling.html
       - seed_starter_tray_assembly_system.html
