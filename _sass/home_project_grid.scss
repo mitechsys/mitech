@@ -55,8 +55,28 @@ a.project {
   background: url("../images/automotive_component_assembly_station.jpg") center center no-repeat;
 }
 
+.automotive-component-inspection-station {
+  background: url("../images/automotive_component_inspection_station.jpg") center center no-repeat;
+}
+
 .large-box-feed-system-refurbishment {
   background: url("../images/large_box_feed_system_refurbishment_detail.jpg") center center no-repeat;
+}
+
+.refurbish-pneumatic-paint-booth {
+  background: url("../images/refurbish_pneumatically_driven_paint_booth.jpg") center center no-repeat;
+}
+
+.high-temperature-oven-lift-system {
+  background: url("../images/oven_lift_system.jpg") center center no-repeat;
+}
+
+.automate-simulated-stone-mold-production {
+  background: url("../images/simulated_stone_mold_production_layout.png") center center no-repeat;
+}
+
+.roof-and-door-actuation-systems {
+  background: url("../images/roof_and_door_actuation_systems.jpg") center center no-repeat;
 }
 /* Description text */
 .project .description {
@@ -87,5 +107,15 @@ a.project {
   .home-projects-grid {
     padding: 1rem 0;
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-projects-grid {
+    display: none;
+  }
+
+  .wrapper {
+    min-height: 0;
   }
 }
