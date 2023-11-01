@@ -706,6 +706,22 @@ a.project {
   background: url("../images/roof_and_door_actuation_systems.jpg") center center no-repeat;
 }
 
+.quick-change-production-tooling {
+  background: url("../images/quick_change_production_tooling.jpg") center center no-repeat;
+}
+
+.edge-cleaning-brush {
+  background: url("../images/edge_cleaning_brush.jpg") center center no-repeat;
+}
+
+.palletizing-robot {
+  background: url("../images/palletizing_robot.jpg") center center no-repeat;
+}
+
+.therapy-table {
+  background: url("../images/therapy_table.jpg") center center no-repeat;
+}
+
 /* Description text */
 .project .description {
   visibility: hidden;
