@@ -535,7 +535,7 @@ header nav li {
 }
 header nav ul {
   margin: 0;
-  padding: 15px 25px 15px 15px;
+  padding: 0 25px 0 15px;
 }
 header nav a {
   text-decoration: none;
@@ -559,7 +559,9 @@ header ul.menu {
   gap: 30px;
 }
 header .logo img {
-  width: 150px;
+  width: 188px;
+  position: relative;
+  top: 4px;
 }
 header .toggle {
   display: none;
