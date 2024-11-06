@@ -122,17 +122,18 @@ img {
     font-size: 1.6rem;
     font-weight: normal;
   }
-  a {
-    font-size: 1.5rem;
-    background: $button;
-    padding: 10px 15px;
-    color: $darkBackground;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    &:hover {
-      background: mix(black, $button, 12%);
-    }
+}
+
+a.button {
+  font-size: 1.5rem;
+  background: $button;
+  padding: 10px 15px;
+  color: $darkBackground;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  &:hover {
+    background: mix(black, $button, 12%);
   }
 }
 
