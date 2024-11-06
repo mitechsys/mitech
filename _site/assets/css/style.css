@@ -422,7 +422,8 @@ img {
   font-size: 1.6rem;
   font-weight: normal;
 }
-.main-title a {
+
+a.button {
   font-size: 1.5rem;
   background: hsl(205, 57%, 70%);
   padding: 10px 15px;
@@ -431,7 +432,7 @@ img {
   border-radius: 5px;
   display: inline-block;
 }
-.main-title a:hover {
+a.button:hover {
   background: #77a4c3;
 }
 
