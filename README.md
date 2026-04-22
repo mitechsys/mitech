@@ -1,6 +1,6 @@
 # Mitech website
 
-Built with [Jekyll](http://jekyllrb.com/) using Ruby 3.1.2.
+Built with [Jekyll](http://jekyllrb.com/) using Ruby 3.2.11.
 
 Serve for local development: `"bundle exec jekyll serve --livereload"` 
 
